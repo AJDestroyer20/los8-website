@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mod epico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #ff006e, #8338ec);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(255, 0, 110, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffd60a;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .members-grid, .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .member-card, .character-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .member-card:hover, .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .member-icon, .character-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff006e, #8338ec);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+
+        .member-name, .character-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        .download-section {
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #00f5ff, #0066ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 102, 255, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.6);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🎵</div>
+            <h1>The Eigh Forgotten</h1>
+            <p class="subtitle">El mod más épico de Friday Night Funkin'</p>
+        </header>
+
+        <section class="section">
+            <h2>📝 Descripción</h2>
+            <p>Un mod basado en un evento cancelado, en el cual participaron 9 miembros, mod de meme ahora siendo oficial.</p>
+            <br>
+            <p><strong>Características:</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>🎮 1 semanas completas con 4 canciones originales</li>
+                <li>✨ Gráficos HD y animaciones personalizadas</li>
+                <li>🎯 Mecánicas de juego innovadoras</li>
+                <li>🔊 Soundtrack completo disponible</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>👥 Conoce al team!</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <img src="icon-aj.png" alt="Alex" class="member-icon">
+                    <div class="member-name">Alex Artista</div>
+                    <div class="member-role">Director & Arte</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-luna.png" alt="Luna" class="member-icon">
+                    <div class="member-name">Luna Beats</div>
+                    <div class="member-role">Compositora</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-code.png" alt="Code" class="member-icon">
+                    <div class="member-name">Code Master</div>
+                    <div class="member-role">Programador</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-story.png" alt="Story" class="member-icon">
+                    <div class="member-name">Story Writer</div>
+                    <div class="member-role">Guionista</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-maria.png" alt="Maria" class="member-icon">
+                    <div class="member-name">Maria Sounds</div>
+                    <div class="member-role">Diseñadora de Sonido</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-pedro.png" alt="Pedro" class="member-icon">
+                    <div class="member-name">Pedro Animator</div>
+                    <div class="member-role">Animador</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-sofia.png" alt="Sofia" class="member-icon">
+                    <div class="member-name">Sofia Chart</div>
+                    <div class="member-role">Charters</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-carlos.png" alt="Carlos" class="member-icon">
+                    <div class="member-name">Carlos Voice</div>
+                    <div class="member-role">Actor de Voz</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-ana.png" alt="Ana" class="member-icon">
+                    <div class="member-name">Ana Pixel</div>
+                    <div class="member-role">Artista Pixel</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-diego.png" alt="Diego" class="member-icon">
+                    <div class="member-name">Diego Beta</div>
+                    <div class="member-role">Beta Tester</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-laura.png" alt="Laura" class="member-icon">
+                    <div class="member-name">Laura PR</div>
+                    <div class="member-role">Relaciones Públicas</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-miguel.png" alt="Miguel" class="member-icon">
+                    <div class="member-name">Miguel UI</div>
+                    <div class="member-role">Diseñador UI/UX</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-valeria.png" alt="Valeria" class="member-icon">
+                    <div class="member-name">Valeria BG</div>
+                    <div class="member-role">Artista de Fondos</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-roberto.png" alt="Roberto" class="member-icon">
+                    <div class="member-name">Roberto Mix</div>
+                    <div class="member-role">Ingeniero de Mezcla</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-carmen.png" alt="Carmen" class="member-icon">
+                    <div class="member-name">Carmen Script</div>
+                    <div class="member-role">Programadora Scripts</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-juan.png" alt="Juan" class="member-icon">
+                    <div class="member-name">Juan FX</div>
+                    <div class="member-role">Artista de Efectos</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-elena.png" alt="Elena" class="member-icon">
+                    <div class="member-name">Elena Community</div>
+                    <div class="member-role">Manager Comunidad</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-ricardo.png" alt="Ricardo" class="member-icon">
+                    <div class="member-name">Ricardo 3D</div>
+                    <div class="member-role">Artista 3D</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-lucia.png" alt="Lucia" class="member-icon">
+                    <div class="member-name">Lucia Cutscene</div>
+                    <div class="member-role">Directora de Cutscenes</div>
+                </div>
+                <div class="member-card">
+                    <img src="icon-fernando.png" alt="Fernando" class="member-icon">
+                    <div class="member-name">Fernando QA</div>
+                    <div class="member-role">Quality Assurance</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎭 Personajes</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-icon">👾</div>
+                    <div class="character-name">yo</div>
+                    <p>El antagonista principal. Un DJ legendario con poderes musicales.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">⚡</div>
+                    <div class="character-name">gato</div>
+                    <p>Una cantante rebelde con actitud electrizante.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">🌟</div>
+                    <div class="character-name">una guayaba</div>
+                    <p>Un prodigio musical que busca demostrar su talento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section download-section">
+            <h2>⬇️ Descargas</h2>
+            <p style="margin-bottom: 20px;">Descarga la última versión del mod (DEMO)</p>
+            <a href="#" class="download-btn">📥 GameBanana</a>
+            <a href="#" class="download-btn">📥 Mediafire</a>
+            <a href="#" class="download-btn">📥 Google Drive</a>
+        </section>
+
+        <section class="section">
+            <h2>🌐 Redes Sociales</h2>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <span>🐦</span> Twitter
+                </a>
+                <a href="#" class="social-btn">
+                    <span>📺</span> YouTube
+                </a>
+                <a href="#" class="social-btn">
+                    <span>💬</span> Discord
+                </a>
+                <a href="#" class="social-btn">
+                    <span>📷</span> Instagram
+                </a>
+                <a href="#" class="social-btn">
+                    <span>🎮</span> GameBanana
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Los 8 Crew Inc. | Friday Night Funkin' por ninjamuffin99</p>
+        </footer>
+    </div>
+</body>
+</html>
